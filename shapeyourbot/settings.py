@@ -39,11 +39,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+=======
+    'corsheaders',
+>>>>>>> feat/rag
     'rest_framework',
     'shapeyourbot.apps.core',
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
+=======
+    'corsheaders.middleware.CorsMiddleware',
+>>>>>>> feat/rag
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -53,6 +61,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+<<<<<<< HEAD
+=======
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",  # Frontend-URL
+]
+
+>>>>>>> feat/rag
 ROOT_URLCONF = 'shapeyourbot.urls'
 
 TEMPLATES = [
@@ -122,6 +137,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+<<<<<<< HEAD
+=======
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
+>>>>>>> feat/rag
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

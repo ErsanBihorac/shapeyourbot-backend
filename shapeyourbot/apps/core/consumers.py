@@ -1,5 +1,9 @@
 import json
 from channels.generic.websocket import WebsocketConsumer
+<<<<<<< HEAD
+=======
+from .rag import receive_llm_answer
+>>>>>>> feat/rag
 
 class ChatConsumer(WebsocketConsumer):
     def connect(self):
@@ -20,8 +24,13 @@ class ChatConsumer(WebsocketConsumer):
             "message": message
         }))
 
+<<<<<<< HEAD
         # ai answer
         answer = "AI: This will be the response to your message, answered by an AI."
+=======
+        # add streaming?
+        answer = receive_llm_answer(message)
+>>>>>>> feat/rag
 
         self.send(text_data=json.dumps({
             "type": "chat",
