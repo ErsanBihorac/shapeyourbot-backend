@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
 documents
 dummydata
 
->>>>>>> feat/rag
 # Django #
 *.log
 *.pot

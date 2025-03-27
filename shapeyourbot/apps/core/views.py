@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-from django.shortcuts import render
-
-def lobby(request):
-    return render(request, 'chat/lobby.html')
-=======
 from rest_framework import status, viewsets
 from rest_framework.response import Response
 from .forms import UploadForm
@@ -25,4 +19,3 @@ class DocumentViewSet(viewsets.ModelViewSet):
                 return Response({"succes": True}, status=status.HTTP_201_CREATED)
         else:
             return Response({"success": False}, status=status.HTTP_400_BAD_REQUEST)
->>>>>>> feat/rag
